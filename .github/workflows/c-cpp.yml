@@ -1,0 +1,86 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-linux-pre:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-linux-pre
+      run: make
+      working-directory: src/Preview
+    - name: Build Prewiew MCT-Linux
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Linux-Pre
+        path: src/Preview/MCT-Linux-Pre
+  
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-linux
+      run: make
+      working-directory: src/Stable
+    - name: Build MCT-Linux
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Linux
+        path: src/Stable/MCT-Linux
+  
+  build-osx-pre:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-osx-pre
+      run: make
+      working-directory: src/Preview
+    - name: Build Prewiew MCT-OSX
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-OSX-Pre
+        path: src/Preview/MCT-Linux-Pre
+  
+  build-osx:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-osx
+      run: make
+      working-directory: src/Stable
+    - name: Build MCT-OSX
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-OSX
+        path: src/Stable/MCT-Linux
+  
+  build-windows-pre:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-windows-pre
+      run: g++ MCT-Windows-Pre.cpp -o MCT-Windows-Pre.exe
+      working-directory: src/Preview
+    - name: Build Prewiew MCT-Windows
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Windows-Pre.exe
+        path: src/Preview/
+  
+  build-windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-windows
+      run: g++ MCT-Windows.cpp -o MCT-Windows.exe
+      working-directory: src/Stable
+    - name: Build MCT-Windows
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Windows.exe
+        path: src/Stable/
