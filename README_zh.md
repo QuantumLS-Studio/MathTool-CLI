@@ -24,7 +24,7 @@
 
 </div>
 
-[🀄简体中文](/README.md)  |  🔠English
+[🀄简体中文](/README_zh.md)  |  [🔠English](/README.md)
 
 ## 📃介绍
 
