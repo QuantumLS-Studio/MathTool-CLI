@@ -1,0 +1,48 @@
+name: MCT-PreviewBuild
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  linux-pre:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-linux-pre
+      run: make
+      working-directory: src/Preview
+    - name: Build Prewiew MCT-Linux
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Linux-Pre
+        path: src/Preview/MCT-Linux-Pre
+  
+  macos-pre:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-macos-pre
+      run: make
+      working-directory: src/Preview
+    - name: Build Prewiew MCT-Macos
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Macos-Pre
+        path: src/Preview/MCT-Linux-Pre
+  
+  windows-pre:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-windows-pre
+      run: g++ MCT-Windows-Pre.cpp -o MCT-Windows-Pre.exe
+      working-directory: src/Preview
+    - name: Build Prewiew MCT-Windows
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Windows-Pre.exe
+        path: src/Preview/MCT-Windows-Pre
+
