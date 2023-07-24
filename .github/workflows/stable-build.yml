@@ -19,6 +19,8 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         name: MCT-Linux
+        path: src/Stable/MCT-Linux
+  
   macos:
     runs-on: macos-latest
     steps:
