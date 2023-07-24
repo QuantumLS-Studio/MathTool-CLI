@@ -14,8 +14,8 @@
 
 [![Version](https://img.shields.io/github/v/tag/QuantumLS-Studio/MathCentralTool?label=Version&style=for-the-badge "Version")](https://github.com/QuantumLS-Studio/MathCentralTool/releases/latest)
 
-[![StableBuild](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/stable-build.yml?label=StableBuild&style=for-the-badge "Stable Build")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/stable-build.yml)
-[![PreviewBuild](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/preview-build.yml?label=PreviewBuild&style=for-the-badge "PreviewBuild")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/preview-build.yml)
+[![Stable](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/stable-build.yml?label=Stable&style=for-the-badge "Stable")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/workflows/stable-build.yml)
+[![Preview](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/preview-build.yml?label=Preview&style=for-the-badge "Preview")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/workflows/preview-build.yml)
 
 ![Archlinux](https://img.shields.io/badge/archlinux-1E90FF?style=for-the-badge&logo=archlinux&logoColor=white)
 ![Windows](https://img.shields.io/badge/windows-4682B4?style=for-the-badge&logo=windows&logoColor=white)
