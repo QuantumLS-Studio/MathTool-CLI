@@ -13,7 +13,9 @@
 [![分支](https://img.shields.io/github/forks/QuantumLS-Studio/MathCentralTool?logo=github&style=for-the-badge "分支")](https://github.com/QuantumLS-Studio/MathCentralTool/forks)
 
 [![版本](https://img.shields.io/github/v/tag/QuantumLS-Studio/MathCentralTool?label=版本&style=for-the-badge "版本")](https://github.com/QuantumLS-Studio/MathCentralTool/releases/latest)
-[![CI](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/c-cpp.yml?label=CI&style=for-the-badge "C/C++ CI")](https://github.com/QuantumLS-Studio/MathCentralTool/actions) 
+
+[![StableBuild](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/stable-build.yml?label=StableBuild&style=for-the-badge "Stable Build")](https://github.com/QuantumLS-Studio/MathCentralTool/actions)
+[![PreviewBuild](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/preview-build.yml?label=PreviewBuild&style=for-the-badge "PreviewBuild")](https://github.com/QuantumLS-Studio/MathCentralTool/actions)
 
 ![Archlinux](https://img.shields.io/badge/archlinux-1E90FF?style=for-the-badge&logo=archlinux&logoColor=white)
 ![Windows](https://img.shields.io/badge/windows-4682B4?style=for-the-badge&logo=windows&logoColor=white)

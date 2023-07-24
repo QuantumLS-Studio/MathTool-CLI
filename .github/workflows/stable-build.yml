@@ -1,0 +1,46 @@
+name: MCT-StableBuild
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-linux
+      run: make
+      working-directory: src/Stable
+    - name: Build MCT-Linux
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Linux
+  macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-macos
+      run: make
+      working-directory: src/Stable
+    - name: Build MCT-Macos
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Macos
+        path: src/Stable/MCT-Linux
+  
+  windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build-windows
+      run: g++ MCT-Windows.cpp -o MCT-Windows.exe
+      working-directory: src/Stable
+    - name: Build MCT-Windows
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: MCT-Windows
+        path: src/Stable/MCT-Windows
