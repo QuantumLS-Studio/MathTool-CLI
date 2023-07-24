@@ -14,8 +14,8 @@
 
 [![Version](https://img.shields.io/github/v/tag/QuantumLS-Studio/MathCentralTool?label=Version&style=for-the-badge "Version")](https://github.com/QuantumLS-Studio/MathCentralTool/releases/latest)
 
-[![StableBuild](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/stable-build.yml?label=StableBuild&style=for-the-badge "Stable Build")](https://github.com/QuantumLS-Studio/MathCentralTool/actions)
-[![PreviewBuild](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/preview-build.yml?label=PreviewBuild&style=for-the-badge "PreviewBuild")](https://github.com/QuantumLS-Studio/MathCentralTool/actions)
+[![StableBuild](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/stable-build.yml?label=StableBuild&style=for-the-badge "Stable Build")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/stable-build.yml)
+[![PreviewBuild](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/preview-build.yml?label=PreviewBuild&style=for-the-badge "PreviewBuild")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/preview-build.yml)
 
 ![Archlinux](https://img.shields.io/badge/archlinux-1E90FF?style=for-the-badge&logo=archlinux&logoColor=white)
 ![Windows](https://img.shields.io/badge/windows-4682B4?style=for-the-badge&logo=windows&logoColor=white)
@@ -69,4 +69,4 @@ Thank every developer very much for their help!👍
 
 ## 👀Othres things
 
-See for previous versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archive🗃️）
+See for previous versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）
