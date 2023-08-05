@@ -42,7 +42,7 @@ void calc(){
             else{
                 num3 = 1; 
                 while(n > 0) {
-                    num1*num3=num3;
+                    int(num1)*int(num3)=num3;
                     n--; 
                 }
             }
