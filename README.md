@@ -59,14 +59,14 @@ Compile the cpp file yourself using the compiler.
 
 ## 🧑‍💻Contributing people
 
-[FTS427](https://github.com/FTS427)Responsible for the entire project
+[FTS427](https://github.com/FTS427) responsible for the entire project
 
-[JWJUN233233](https://github.com/JWJUN233233)Provides help with "Git Action" for this project
+[JWJUN233233](https://github.com/JWJUN233233) provides help with "Git Action" for this project
 
-[N55743](https://github.com/N55743)Provided Windows-side testing and translation services for the entire project, and asked some questions and suggestions
+[N55743](https://github.com/N55743) provided Windows testing and translation services for the entire project, and asked some questions and suggestions
 
 Thank every developer very much for their help!👍
 
 ## 👀Othres things
 
-See for previous versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）
+See for older versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）
