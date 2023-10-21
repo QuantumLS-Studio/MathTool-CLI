@@ -1,6 +1,6 @@
 ﻿//此版本为Preview测试版，有不稳定功能和不完整功能
 
-#include "ECPPH.h"
+#include "../head/ECPPH.h"
 #include <stdio.h>
 char q;
 
@@ -8,13 +8,13 @@ void hy(const char T[]){cout<<"欢迎使用"<<T<<"功能！"<<endl;}
 
 //calc函数,计算器
 void calc(){
-    clear(0);
+    clear();
     char o;
     double num1,num2,num3;
     hy("计算器");
     print("\033[1;37;43m注意\033[0m：现仅只支持两个数之间的运算！","no",true);
 	while (true){
-        line("-",20,"yellow");
+        line("-",20,"yellow",true);
         print("请输入计算式(+ - * / ^),输入'0c0'退出","white",true);
         print("如: 1+1","white",true);
         cin >> num1 >> o >> num2;
@@ -22,35 +22,37 @@ void calc(){
         if (o == '+')
             printf("%f+%f=%f\n",num1,num2,num1+num2);
         //减
-        else if (o == '-')
+        if (o == '-')
             printf("%f-%f=%f\n",num1,num2,num1-num2);
         //乘
-        else if (o == '*')
+        if (o == '*')
             printf("%f*%f=%f\n",num1,num2,num1*num2);
         //除
-        else if (o == '/'){
-            if (num2 == 0)
-                error();
-            else
+        if (o == '/'){
+            if (num2 != 0)
                 printf("%f/%f=%f\n",num1,num2,num1/num2);
+            else
+                error();
         }
         //乘方
-        else if (o == '^') {
+        /*
+        if (o == '^') {
             int n=num2;
-			if (num1 == 0 && num2 == 0) 
-                error(); 
-            else{
+            if(num1 != 0 && num2 != 0){
                 num3 = 1; 
                 while(n > 0) {
                     int(num1)*int(num3)=num3;
                     n--; 
                 }
             }
+            else
+                error();
             printf("%f^%f=%f\n",num1,num2,num3); 
         }
+        */
         //退出
-        else if(o == 'c' && num1 == 0 && num2 ==0){
-            clear(0);
+        if(o == 'c' && num1 == 0 && num2 ==0){
+            clear();
             break;
         }
         //报错
@@ -61,16 +63,16 @@ void calc(){
 
 //B函数,计算最大公约数
 void B(){
-    clear(0);
+    clear();
     double num3, num4;
     hy("最大公约数");
     print("\033[1;43;37m注意\033[0m：本功能只支持两个数之间的运算！","no",true);
     while(true){
-        line("-",20,"yellow");
+        line("-",20,"yellow",true);
         print("输入任意值继续，输入\033[33;1mC\033[0m退出...","no",true);
         cin >> q;
         if(q == 'c' || q == 'C'){
-            clear(0);
+            clear();
             break;
         }
         else{
@@ -93,15 +95,15 @@ void B(){
 
 //C函数,计算最小公倍数
 void C(){
-    clear(0);
+    clear();
     hy("最小公倍数");
     print("\033[1;43;37m注意\033[0m：本功能只支持两个数之间的运算!","no",true);
     while(true){
-        line("-",20,"yellow");
+        line("-",20,"yellow",true);
         print("输入任意值继续，输入\033[33;1mC\033[0m退出...","no",true);
         cin >> q;
         if(q == 'c' || q == 'C'){
-            clear(0);
+            clear();
             break;
         }
         else{
@@ -133,15 +135,15 @@ void C(){
 
 //D函数,数值分析器
 void D(){
-    clear(0);
+    clear();
     long double x, a;
     hy("数值分析器");
     while(true){
-        line("-",20,"yellow");
+        line("-",20,"yellow",true);
         print("输入任意值继续，输入\033[1;33mC\033[0m退出...","no",true);
         cin >> q;
         if (q == 'c' || q == 'C'){
-            clear(0);
+            clear();
             break;
         }
         else{
@@ -164,7 +166,7 @@ void D(){
                     cout << x << "是负数" << endl;
                 if (x == 1)
                     cout << x << "不分质数合数" << endl;
-                else if (int(x) - x != 0) 
+                if (int(x) - x != 0) 
                     cout << x << "不分质数合数" << endl;
                 else{
                     int n=0, i;
@@ -173,35 +175,32 @@ void D(){
                         n=n+1;
                     if (n >0)
                         cout << x << "是合数" << endl;
-                    else
-                        cout << x << "是质数" << endl;
+                    cout << x << "是质数" << endl;
                 }
                 if (int(x) == x){
                     if (int(x) % 2 == 0)
                         cout << x << "是偶数" << endl;
-                    else
-                        cout << x << "是奇数" << endl;
+                    cout << x << "是奇数" << endl;
                 }
                 else{
                     if (x/2 - int(x)/2 == 0)
                         cout << x << "是偶数" << endl;
-                    else
-                        cout << x << "是奇数" << endl;
+                    cout << x << "是奇数" << endl;
                 }
             }
         }
     }
 }
-
+/*
 //E函数,几何计算
 void E(){
     hy("几何计算");
     while(true){
-        line("-",20,"yellow");
+        line("-",20,"yellow",true);
         print("输入任意键继续，输入“\033[1;33mc\033[0m”退出...","no",true);
         cin >> q;
         if (q == 'c' || q == 'C'){
-            clear(0);
+            clear();
             break;
         }
         else{
@@ -209,14 +208,14 @@ void E(){
         }
     }
 }
-
+*/
 //主函数
 int main(){
-    clear(0);
+    clear();
     hy("集成数学工具");
     char u;
     while(true){
-        line("-",20,"yellow");
+        line("-",20,"yellow",true);
         dash("\033[1;34m(1)\033[34m计算器\033[0m");
         dash("\033[1;35m(2)\033[35m最大公约数\033[0m");
         dash("\033[1;36m(3)\033[36m最小公倍数\033[0m");
@@ -228,23 +227,22 @@ int main(){
         cin >> u;
         if (u=='1')
             calc();
-        else if (u=='2')
+        if (u=='2')
             B();
-        else if (u=='3')
+        if (u=='3')
             C();
-        else if (u=='4')
+        if (u=='4')
             D();
-        else if (u=='5')
-            E();
-		else if (u=='E'||u=='e')
+//if (u=='5')E();
+	    if (u=='E'||u=='e')
 		    break;
-        else if (u=='A'||u =='a'){
-            clear(0);
-            line("=",20,"blue");
-            dash("MCT Preview v0.0.1.3-1");
+        if (u=='A'||u =='a'){
+            clear();
+            line("=",20,"blue",true);
+            dash("MCT Preview v0.0.1.3-2");
             dash("Made by QuantumLS-Studio");
             dash("Github:https://github.com/QuantumLS-Studio/MathCentralTool");
-            line("=",20,"blue");
+            line("=",20,"blue",true);
         }
         else
             error();
