@@ -19,20 +19,7 @@ jobs:
       with:
         name: MCT-Linux-Pre
         path: src/Preview/MCT-Linux-Pre
-  
-  macos-pre:
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: build-macos-pre
-      run: make
-      working-directory: src/Preview
-    - name: Build Preview MCT-Macos
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        name: MCT-Macos-Pre
-        path: src/Preview/MCT-Linux-Pre
-  
+ 
   windows-pre:
     runs-on: windows-latest
     steps:
