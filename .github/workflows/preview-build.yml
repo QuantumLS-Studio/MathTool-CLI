@@ -13,23 +13,23 @@ jobs:
     - uses: actions/checkout@v3
     - name: build-linux-pre
       run: make
-      working-directory: src/Preview
+      working-directory: src/
     - name: Build Preview MCT-Linux
       uses: actions/upload-artifact@v3.1.2
       with:
         name: MCT-Linux-Pre
-        path: src/Preview/MCT-Linux-Pre
+        path: src/MCT-Linux
  
   windows-pre:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
     - name: build-windows-pre
-      run: g++ MCT-Windows-Pre.cpp -o MCT-Windows-Pre.exe
+      run: g++ MCT-Windows.cpp -o MCT-Windows.exe
       working-directory: src/Preview
     - name: Build Preview MCT-Windows
       uses: actions/upload-artifact@v3.1.2
       with:
-        name: MCT-Windows-Pre.exe
-        path: src/Preview/MCT-Windows-Pre
+        name: MCT-Windows.exe
+        path: src/MCT-Windows
 
