@@ -17,9 +17,6 @@
 [![Stable](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/stable-build.yml?label=Stable&style=for-the-badge "Stable")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/workflows/stable-build.yml)
 [![Preview](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/preview-build.yml?label=Preview&style=for-the-badge "Preview")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/workflows/preview-build.yml)
 
-![Archlinux](https://img.shields.io/badge/archlinux-1E90FF?style=for-the-badge&logo=archlinux&logoColor=white)
-![Windows](https://img.shields.io/badge/windows-4682B4?style=for-the-badge&logo=windows&logoColor=white)
-
 ![C++](https://img.shields.io/badge/c++-4B0082?style=for-the-badge&logoColor=white)
 
 ![邮箱](https://img.shields.io/badge/邮箱-fts427%40outlook.com-4169E1?style=for-the-badge&logoColor=white)
