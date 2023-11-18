@@ -20,20 +20,7 @@ jobs:
       with:
         name: MCT-Linux
         path: src/Stable/MCT-Linux
-  
-  macos:
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: build-macos
-      run: make
-      working-directory: src/Stable
-    - name: Build MCT-Macos
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        name: MCT-Macos
-        path: src/Stable/MCT-Linux
-  
+ 
   windows:
     runs-on: windows-latest
     steps:
