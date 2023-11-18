@@ -14,12 +14,12 @@ jobs:
     - uses: actions/checkout@v3
     - name: build-linux
       run: make
-      working-directory: src/Stable
+      working-directory: src
     - name: Build MCT-Linux
       uses: actions/upload-artifact@v3.1.2
       with:
         name: MCT-Linux
-        path: src/Stable/MCT-Linux
+        path: src/MCT-Linux
  
   windows:
     runs-on: windows-latest
@@ -27,9 +27,9 @@ jobs:
     - uses: actions/checkout@v3
     - name: build-windows
       run: g++ MCT-Windows.cpp -o MCT-Windows.exe
-      working-directory: src/Stable
+      working-directory: src
     - name: Build MCT-Windows
       uses: actions/upload-artifact@v3.1.2
       with:
         name: MCT-Windows
-        path: src/Stable/MCT-Windows
+        path: src/MCT-Windows
