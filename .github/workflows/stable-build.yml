@@ -2,9 +2,9 @@ name: MCT-StableBuild
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "Stable" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "Stable" ]
 
 jobs:
 
