@@ -1,10 +1,10 @@
-﻿//此版本为Preview测试版，有不稳定功能和不完整功能
+﻿//Preview, be careful
 
 #include "../head/ECPPH.h"
 #include <stdio.h>
 char q;
 
-void hy(const char T[]){cout<<"欢迎使用"<<T<<"功能！"<<endl;}
+void hy(const char T[]){cout<<"==> "<<T<<endl;}
 
 //calc函数,计算器
 void calc(){
@@ -12,7 +12,7 @@ void calc(){
     char o;
     double num1,num2,num3;
     hy("计算器");
-    print("\033[1;37;43m注意\033[0m：现仅只支持两个数之间的运算！","no",true);
+    print("\033[1;37;43m[NOTE]\033[0m：现仅只支持两个数之间的运算！","no",true);
 	while (true){
         line("-",20,"yellow",true);
         print("请输入计算式(+ - * / ^),输入'0c0'退出","white",true);
@@ -66,10 +66,10 @@ void B(){
     clear();
     double num3, num4;
     hy("最大公约数");
-    print("\033[1;43;37m注意\033[0m：本功能只支持两个数之间的运算！","no",true);
+    print("\033[1;43;37m[NOTE]\033[0m：本功能只支持两个数之间的运算！","no",true);
     while(true){
         line("-",20,"yellow",true);
-        print("输入任意值继续，输入\033[33;1mC\033[0m退出...","no",true);
+        print("输入任意值继续，输入\033[33;1mC\033[0m退出","no",true);
         cin >> q;
         if(q == 'c' || q == 'C'){
             clear();
@@ -223,7 +223,7 @@ int main(){
         dash("\033[1;33m(5)\033[33m几何\033[0m");
         dash("\033[0m(a)关于\033[0m");
         dash("\033[1;33m(e)退出\033[0m");
-        print("请键入所需功能：","white",false);
+        print("==> ","white",false);
         cin >> u;
         if (u=='1')
             calc();
@@ -239,9 +239,9 @@ int main(){
         if (u=='A'||u =='a'){
             clear();
             line("=",20,"blue",true);
-            dash("MCT Preview v0.0.1.3-2");
+            dash("MCT Preview v0.0.1.3-3");
             dash("Made by QuantumLS-Studio");
-            dash("Github:https://github.com/QuantumLS-Studio/MathCentralTool");
+            dash("Url: https://github.com/QuantumLS-Studio/MathCentralTool");
             line("=",20,"blue",true);
         }
         else
