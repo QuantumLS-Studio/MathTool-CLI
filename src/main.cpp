@@ -1,6 +1,6 @@
 ﻿//Preview, be careful
 
-#include "../head/ECPPH.h"
+#include "./head/ECPPH.h"
 #include <stdio.h>
 char q;
 

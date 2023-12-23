@@ -7,29 +7,16 @@ on:
     branches: [ "Preview" ]
 
 jobs:
-  linux-pre:
+  linux:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: build-linux-pre
+    - name: build-linux
       run: make
       working-directory: src/
     - name: Build Preview MCT-Linux
       uses: actions/upload-artifact@v3.1.2
       with:
-        name: MCT-Linux-Pre
-        path: src/MCT-Linux
- 
-  windows-pre:
-    runs-on: windows-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: build-windows-pre
-      run: g++ MCT-Windows.cpp -o MCT-Windows.exe
-      working-directory: src/Preview
-    - name: Build Preview MCT-Windows
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        name: MCT-Windows.exe
-        path: src/MCT-Windows
+        name: MCT-Pre
+        path: src/MCT
 
