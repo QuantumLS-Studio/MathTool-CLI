@@ -23,22 +23,22 @@
 
 [🀄简体中文](/README_zh.md)  |  🔠[English](/README.md)
 
-## 📃Introduce
+## 📃 Introduce
 A terminal-based math tool that runs on linux.
 
 This program is free and open source. We allow everyone to use the source code for enrichment, compilation, etc. But we don't take any responsibility for any problems!
 
 ⚠worn: This program is in developing and cannot be used for scientific precision calculations! If anything goes wrong, do so at your own risk!
 
-## ❔How to use 
+## ❔ How to use 
 
 Look in the GitAction and choose you need.
 
 Or clone and compile by yourself.
 
-📦Compilation environment requirements: make, gcc
+📦 Compilation environment requirements: make, gcc
 
-## 🧑‍💻Contribution and thanks
+## 🧑‍💻 Contribution and thanks
 
 [FTS427](https://github.com/FTS427) responsible for the entire project
 
@@ -48,7 +48,7 @@ Or clone and compile by yourself.
 
 Thank every developer very much for their help!👍
 
-## 👀Other
+## 👀 Other
 This project also powered by [ECCPH](https://github.com/QuantumLS-Studio/ECCPH)
 
 Old versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）
