@@ -17,8 +17,6 @@
 [![Stable](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/stable-build.yml?label=Stable&style=for-the-badge "Stable")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/workflows/stable-build.yml)
 [![Preview](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/preview-build.yml?label=Preview&style=for-the-badge "Preview")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/workflows/preview-build.yml)
 
-![C++](https://img.shields.io/badge/c++-4B0082?style=for-the-badge&logoColor=white)
-
 ![邮箱](https://img.shields.io/badge/邮箱-fts427%40outlook.com-4169E1?style=for-the-badge&logoColor=white)
 
 </div>
@@ -27,7 +25,7 @@
 
 ## 📃介绍
 
-一个似乎没有什么用的基于终端的数学小工具。
+一个基于终端的数学小工具。
 
 本程序是免费开源的，此源代码可以随意使用。允许任何人使用源代码进行扩充，编译等操作。出现任何问题，本人不承担任何责任！
 
@@ -37,25 +35,11 @@
 
 在GitAction中寻找符合自己设备的版本
 
-或自行拉取编译，但Linux和Windows的源代码不一样，注意！
+或自行拉取编译
 
 📦编译环境需求（Linux）：make，gcc
 
-### 🐧Linux
-
-Stable
-
-请在src/Stable下打开终端，执行“make“即可编译
-
-Preview
-
-请在src/Preview下打开终端，执行“make“即可编译
-
-### 💠Windows
-
-自行使用编译器编译cpp文件
-
-## 🧑‍💻贡献人员
+## 🧑‍💻感谢
 
 [FTS427](https://github.com/FTS427)负责了整个项目
 
@@ -66,5 +50,7 @@ Preview
 在此非常感谢每一位贡献人员的帮助！👍
 
 ## 👀其他
+
+本项目使用了头文件[ECPPH](https://github.com/QuantumLS-Studio/ECPPH)
 
 先前的版本参见[MathCentralTools](https://github.com/FTS427/MathCentralTools)（已归档🗃️）
