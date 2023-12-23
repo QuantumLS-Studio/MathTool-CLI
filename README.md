@@ -1,5 +1,5 @@
 <div align="center">
-    <img width="175" src="/other/MCT.png"></img>
+    <img width="175" src="/assets/MCT.png"></img>
 </div>
 
 <h1 align="center">MathCentralTool</h1>
@@ -24,35 +24,21 @@
 [🀄简体中文](/README_zh.md)  |  🔠[English](/README.md)
 
 ## 📃Introduce
-A terminal-based math gadget that doesn't seem to be of any use.
+A terminal-based math tool that runs on linux.
 
-This program is free and open source, this source code can be used at will. We allow everyone to use the source code for enrichment, compilation, etc. But we don't take any responsibility for any problems!
+This program is free and open source. We allow everyone to use the source code for enrichment, compilation, etc. But we don't take any responsibility for any problems!
 
-⚠note: This program is in the development stage and cannot be used for scientific precision calculations! If anything goes wrong, do so at your own risk!
+⚠worn: This program is in developing and cannot be used for scientific precision calculations! If anything goes wrong, do so at your own risk!
 
 ## ❔How to use 
 
-Look for the version in GitAction that matches your device
+Look in the GitAction and choose you need.
 
-Or clone and compile by yourself, but the source code of Linux and Windows is not the same, this needs to be noted!
+Or clone and compile by yourself.
 
-📦Linux compilation environment requirements: make, gcc
+📦Compilation environment requirements: make, gcc
 
-### 🐧Linux
-
-Stable
-
-Please open the terminal under src/stable and run "make" to compile.
-
-Preview
-
-Please open the terminal under src/stable and run "make" to compile.
-
-### 💠Windows
-
-Compile the cpp file yourself using the compiler.
-
-## 🧑‍💻Contributing people
+## 🧑‍💻Contribution and thanks
 
 [FTS427](https://github.com/FTS427) responsible for the entire project
 
@@ -62,6 +48,7 @@ Compile the cpp file yourself using the compiler.
 
 Thank every developer very much for their help!👍
 
-## 👀Othres things
+## 👀Other
+This project also powered by [ECCPH](https://github.com/QuantumLS-Studio/ECCPH)
 
-See for older versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）
+Old versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）
