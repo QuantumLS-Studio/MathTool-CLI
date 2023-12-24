@@ -1,11 +1,11 @@
 ﻿//Preview, be careful
 
-#include "./head/mhead.h"
-#include "./cpart/calc.cpp"
-#include "./cpart/maxn.cpp"
-#include "./cpart/minn.cpp"
-#include "./cpart/chn.cpp"
-#include "./cpart/cg.cpp"
+#include "./include/mhead.h"
+#include "./part/calc.cpp"
+#include "./part/maxn.cpp"
+#include "./part/minn.cpp"
+#include "./part/chn.cpp"
+#include "./part/cg.cpp"
 
 //主函数
 int main(){
