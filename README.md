@@ -18,25 +18,26 @@
 [![Preview](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/preview-build.yml?label=Preview&style=for-the-badge "Preview")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/workflows/preview-build.yml)
 
 ![EMAIL](https://img.shields.io/badge/EMAIL-fts427%40outlook.com-4169E1?style=for-the-badge&logoColor=white)
- 
+
 </div>
 
 [🀄简体中文](/README_zh.md)  |  🔠[English](/README.md)
 
 ## 📃 Introduce
+
 A terminal-based math tool that runs on linux.
 
 This program is free and open source. We allow everyone to use the source code for enrichment, compilation, etc. But we don't take any responsibility for any problems!
 
 ⚠worn: This program is in developing and cannot be used for scientific precision calculations! If anything goes wrong, do so at your own risk!
 
-## ❔ How to use 
+## ❔ How to use
 
 Look in the GitAction and choose you need.
 
 Or clone and compile by yourself.
 
-📦 Compilation environment requirements: make, gcc
+📦 Compilation environment requirements: cmake, make, gcc
 
 ## 🧑‍💻 Contribution and thanks
 
@@ -49,6 +50,7 @@ Or clone and compile by yourself.
 Thank every developer very much for their help!👍
 
 ## 👀 Other
+
 This project also powered by [ECCPH](https://github.com/QuantumLS-Studio/ECCPH)
 
 Old versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）

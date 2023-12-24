@@ -37,7 +37,7 @@
 
 或自行拉取编译
 
-📦编译环境需求（Linux）：make，gcc
+📦编译环境需求：cmake, make，gcc
 
 ## 🧑‍💻感谢
 
