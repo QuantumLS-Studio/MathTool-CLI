@@ -1,25 +1,17 @@
 #include <iostream>
 #include <cmath>
 #include <limits>
-#include <unistd.h>
-#include <ctime>
-#include <chrono>
 #include <cstring>
 #include <cstdio>
-#include <ios>
 #include <string>
-#include <sys/types.h>
 using namespace std;
 
 int error(){
-    printf("\033[1,31mERROR!\033[0m\a\n");
+    cout << "\033[1,31mERROR!\033[0m\a\n";
     return 1;
 }
 
-void clear(){
-    printf("\033[2J");
-    printf("\033[0,0");
-}
+void clear(){system("clear");}
 
 void print(const char T[],string color,bool i){
     if(i==true){
@@ -91,3 +83,5 @@ void boxout(const char T[],string bc,string tc,bool i){
     }
     error;
 }
+void hy(const char T[]){cout<<"==> "<<T<<endl;}
+char q;

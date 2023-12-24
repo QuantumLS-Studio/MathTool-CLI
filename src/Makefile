@@ -1,2 +1,2 @@
-MCT-Build: main.cpp 
+MCT-Build: main.cpp ./cpart/ 
 	g++ main.cpp -o ../bin/MCT
