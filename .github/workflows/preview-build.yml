@@ -1,4 +1,4 @@
-name: MCT-PreviewBuild
+name: Preview-Build
 
 on:
   push:
@@ -7,42 +7,31 @@ on:
     branches: [ "Preview" ]
 
 jobs:
-  linux-pre:
+  linux:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: build-linux-pre
-      run: make
-      working-directory: src/Preview
-    - name: Build Preview MCT-Linux
+    - name: CMake build
+      run: |
+        cd ${{ github.workspace }}
+        ls
+        mkdir build
+        cd build
+        cmake --version
+        cmake ../
+        echo "Done!"
+      shell: sh
+    - name: Make build
+      run: |
+        cd ${{ github.workspace }}
+        ls
+        cd build
+        make
+        echo "Done!"
+      shell: sh
+    - name: Upload exec file
       uses: actions/upload-artifact@v3.1.2
       with:
-        name: MCT-Linux-Pre
-        path: src/Preview/MCT-Linux-Pre
-  
-  macos-pre:
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: build-macos-pre
-      run: make
-      working-directory: src/Preview
-    - name: Build Preview MCT-Macos
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        name: MCT-Macos-Pre
-        path: src/Preview/MCT-Linux-Pre
-  
-  windows-pre:
-    runs-on: windows-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: build-windows-pre
-      run: g++ MCT-Windows-Pre.cpp -o MCT-Windows-Pre.exe
-      working-directory: src/Preview
-    - name: Build Preview MCT-Windows
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        name: MCT-Windows-Pre.exe
-        path: src/Preview/MCT-Windows-Pre
+        name: MCT-Pre
+        path: build/MCT
 
