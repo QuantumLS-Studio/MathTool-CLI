@@ -1,6 +1,4 @@
-﻿//Preview, be careful
-
-#include "./include/ecp.h"
+﻿#include "./include/ecp.h"
 #include "./plugins/calc.cpp"
 #include "./plugins/maxn.cpp"
 #include "./plugins/minn.cpp"
@@ -17,7 +15,6 @@ int main(){
         dash("\033[1;35m(2)\033[35m最大公约数\033[0m");
         dash("\033[1;36m(3)\033[36m最小公倍数\033[0m");
         dash("\033[1;32m(4)\033[32m数值分析器\033[0m");
-        dash("\033[1;33m(5)\033[33m几何\033[0m");
         dash("\033[0m(a)关于\033[0m");
         dash("\033[1;33m(e)退出\033[0m");
         print("> ","white",false);
@@ -30,13 +27,12 @@ int main(){
             C();
         if (q=='4')
             D();
-//if (u=='5')E();
 	    if (q=='E'||q=='e')
 		    break;
         if (q=='A'||q =='a'){
             clear();
             line("=",20,"blue",true);
-            dash("MCT Preview v0.0.1.3-4");
+            dash("MCT Stable v0.0.1.3");
             dash("Made by QuantumLS-Studio");
             dash("Url: https://github.com/QuantumLS-Studio/MathCentralTool");
             line("=",20,"blue",true);
