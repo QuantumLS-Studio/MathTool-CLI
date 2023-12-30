@@ -1,13 +1,13 @@
 ﻿//Preview, be careful
 
-#include "./include/mhead.h"
-#include "./part/calc.cpp"
-#include "./part/maxn.cpp"
-#include "./part/minn.cpp"
-#include "./part/chn.cpp"
-#include "./part/cg.cpp"
+#include "./include/ecp.h"
+#include "./plugins/calc.cpp"
+#include "./plugins/maxn.cpp"
+#include "./plugins/minn.cpp"
+#include "./plugins/chn.cpp"
+#include "./plugins/cg.cpp"
 
-//主函数
+// Main function
 int main(){
     clear();
     hy("集成数学工具");
