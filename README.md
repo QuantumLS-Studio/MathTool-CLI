@@ -6,7 +6,6 @@
 
 <div align="center">
 
-[![Download](https://img.shields.io/github/downloads/QuantumLS-Studio/MathCentralTool/total?logo=github&label=Download&style=for-the-badge&color=44cc11)](https://github.com/QuantumLS-Studio/MathCentralTool/releases)
 [![Stars](https://img.shields.io/github/stars/QuantumLS-Studio/MathCentralTool?logo=github&label=Stars&style=for-the-badge)](https://github.com/QuantumLS-Studio/MathCentralTool/stargazers)
 [![License](https://img.shields.io/github/license/QuantumLS-Studio/MathCentralTool?logo=github&label=License&style=for-the-badge&color=ff7a35)](https://github.com/QuantumLS-Studio/MathCentralTool/blob/master/LICENSE)
 [![Issues](https://img.shields.io/github/issues/QuantumLS-Studio/MathCentralTool?logo=github&lable=issues&style=for-the-badge "Issues")](https://github.com/QuantumLS-Studio/MathCentralTool/issues)
@@ -16,8 +15,6 @@
 
 [![Stable](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/stable-build.yml?label=Stable&style=for-the-badge "Stable")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/workflows/stable-build.yml)
 [![Preview](https://img.shields.io/github/actions/workflow/status/QuantumLS-Studio/MathCentralTool/preview-build.yml?label=Preview&style=for-the-badge "Preview")](https://github.com/QuantumLS-Studio/MathCentralTool/actions/workflows/preview-build.yml)
-
-![EMAIL](https://img.shields.io/badge/EMAIL-fts427%40outlook.com-4169E1?style=for-the-badge&logoColor=white)
 
 </div>
 
@@ -51,6 +48,9 @@ Thank every developer very much for their help!👍
 
 ## 👀 Other
 
+Change log [change](/change_log.md)
+
 This project also powered by [ECCPH](https://github.com/QuantumLS-Studio/ECCPH)
 
 Old versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）
+
