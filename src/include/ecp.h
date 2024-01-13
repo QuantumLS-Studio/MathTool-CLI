@@ -4,10 +4,12 @@
 #include <cstring>
 #include <cstdio>
 #include <string>
+#include <cstddef>
 using namespace std;
 
-void error(){
-    cout << "\033[1,31m"+"ERROR!"+"\033[0m\a\n";
+int error(){
+    printf("\033[1,31mERROR!\033[0m\a\n");
+    return 0;
 }
 
 void clear(){system("clear");}

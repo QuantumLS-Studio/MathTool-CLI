@@ -1,3 +1,5 @@
+/*
+/*
 //calc函数,计算器
 void calc(){
     clear();
@@ -41,13 +43,43 @@ error();
 printf("%f^%f=%f\n",num1,num2,num3);
 }
 */
+/*
         //退出
-        if(o == 'c' && num1 == 0 && num2 ==0){
+    if(o == 'c' && num1 == 0 && num2 ==0){
         clear();
         break;
     }
     //报错
     else
         error();
+    }
+}
+*/
+int calc(int fn, int bn, char o){
+    if (o=='+')
+        return fn+bn;
+    if (o=='-')
+        return fn-bn;
+    if (o=='*')
+        return fn*bn;
+    if (o=='/'){
+        if (fn==0)
+            error();
+        else
+            return fn/bn;
+    }
+    if (o=='^'){
+        if (fn==bn==0)
+            error();
+        int value=fn;
+        for (size_t i = 0; i <= bn; i++)
+        {
+            value=fn*value;
+        }
+        return value;
+    }
+    else{
+        error();
+        return 0;
     }
 }

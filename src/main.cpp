@@ -1,11 +1,11 @@
 ﻿//Preview, be careful
 
 #include "./include/ecp.h"
-#include "./plugins/calc.cpp"
-#include "./plugins/maxn.cpp"
-#include "./plugins/minn.cpp"
-#include "./plugins/chn.cpp"
-#include "./plugins/cg.cpp"
+#include "./module/calc.cpp"
+#include "./module/maxn.cpp"
+#include "./module/minn.cpp"
+#include "./module/chn.cpp"
+#include "./module/cg.cpp"
 
 // Main function
 int main(){
@@ -22,8 +22,12 @@ int main(){
         dash("\033[1;33m(e)退出\033[0m");
         print("> ","white",false);
         cin >> q;
-        if (q=='1')
-            calc();
+        if (q=='1'){
+            int a,b;
+            char o;
+            cin >>a>>o>>b;
+            cout << calc(a,b,o) <<endl;
+        }
         if (q=='2')
             B();
         if (q=='3')
