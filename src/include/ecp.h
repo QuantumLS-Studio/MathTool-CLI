@@ -6,9 +6,8 @@
 #include <string>
 using namespace std;
 
-int error(){
-    cout << "\033[1,31mERROR!\033[0m\a\n";
-    return 1;
+void error(){
+    cout << "\033[1,31m"+"ERROR!"+"\033[0m\a\n";
 }
 
 void clear(){system("clear");}
