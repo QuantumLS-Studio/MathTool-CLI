@@ -21,12 +21,12 @@ jobs:
         cmake ../
         echo "Done!"
       shell: sh
-    - name: Make build
+    - name: Ninja build
       run: |
         cd ${{ github.workspace }}
         ls
         cd build
-        make
+        ninja
         echo "Done!"
       shell: sh
     - name: Upload exec file
