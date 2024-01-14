@@ -22,7 +22,6 @@ jobs:
         cd build
         cmake --version
         cmake ../
-        echo "Done!"
       shell: sh
     - name: Upload exec file
       uses: actions/upload-artifact@v3.1.2
