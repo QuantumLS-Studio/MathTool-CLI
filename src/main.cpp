@@ -26,7 +26,9 @@ int main(){
             int a,b;
             char o;
             cin >>a>>o>>b;
-            cout << calc(a,b,o) <<endl;
+            while (a!='0'&&b!='0'&&o!='c'){
+                cout << calc(a,b,o) <<endl;
+            }
         }
         if (q=='2')
             B();
