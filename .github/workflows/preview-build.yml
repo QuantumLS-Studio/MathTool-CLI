@@ -18,7 +18,6 @@ jobs:
       run: |
         cd ${{ github.workspace }}
         ls
-        mkdir build
         cd build
         cmake --version
         cmake ../
