@@ -1,6 +1,8 @@
 ﻿//Preview, be careful
 
 #include "./include/ecp.h"
+
+// Include modules
 #include "./module/calc.cpp"
 #include "./module/maxn.cpp"
 #include "./module/minn.cpp"
@@ -25,9 +27,12 @@ int main(){
         if (q=='1'){
             int a,b;
             char o;
+            print("calc> ","white",false);
             cin >>a>>o>>b;
             while (a!='0'&&b!='0'&&o!='c'){
                 cout << calc(a,b,o) <<endl;
+                print("calc> ","white",false);
+                cin >>a>>o>>b;
             }
         }
         if (q=='2')
@@ -36,7 +41,6 @@ int main(){
             C();
         if (q=='4')
             D();
-//if (u=='5')E();
 	    if (q=='E'||q=='e')
 		    break;
         if (q=='A'||q =='a'){
