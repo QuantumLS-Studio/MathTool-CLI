@@ -10,7 +10,9 @@ jobs:
   linux:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Conifg cmake
       uses: threeal/cmake-action@v1.3.0
     - name: CMake build
       run: |
