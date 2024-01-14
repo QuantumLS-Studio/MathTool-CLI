@@ -26,7 +26,7 @@ A terminal-based math tool that runs on linux.
 
 This program is free and open source. We allow everyone to use the source code for enrichment, compilation, etc. But we don't take any responsibility for any problems!
 
-⚠ note: This program cannot be used for science! If anything goes wrong, do so at your own risk!
+⚠ Note: This program cannot be used for science! If anything goes wrong, do so at your own risk!
 
 ## ❔ How to use
 
