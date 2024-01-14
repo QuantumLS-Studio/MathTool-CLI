@@ -26,15 +26,15 @@ A terminal-based math tool that runs on linux.
 
 This program is free and open source. We allow everyone to use the source code for enrichment, compilation, etc. But we don't take any responsibility for any problems!
 
-⚠worn: This program is in developing and cannot be used for scientific precision calculations! If anything goes wrong, do so at your own risk!
+⚠ Note: This program cannot be used for science! If anything goes wrong, do so at your own risk!
 
 ## ❔ How to use
 
-Look in the GitAction and choose you need.
+Look in the GitAction and choose waht you need.
 
 Or clone and compile by yourself.
 
-📦 Compilation environment requirements: cmake, make, gcc
+📦 Compilation environment requirements: cmake, ninja, gcc
 
 ## 🧑‍💻 Contribution and thanks
 

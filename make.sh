@@ -1,5 +1,5 @@
 cmake -S . -B ./build &&
 cd ./build &&
-make &&
+ninja &&
 echo "Done!" &&
 echo "Exec -> build/MCT"

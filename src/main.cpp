@@ -1,11 +1,13 @@
 ﻿//Preview, be careful
 
 #include "./include/ecp.h"
-#include "./plugins/calc.cpp"
-#include "./plugins/maxn.cpp"
-#include "./plugins/minn.cpp"
-#include "./plugins/chn.cpp"
-#include "./plugins/cg.cpp"
+
+// Include modules
+#include "./module/calc.cpp"
+#include "./module/maxn.cpp"
+#include "./module/minn.cpp"
+#include "./module/chn.cpp"
+#include "./module/cg.cpp"
 
 // Main function
 int main(){
@@ -22,15 +24,23 @@ int main(){
         dash("\033[1;33m(e)退出\033[0m");
         print("> ","white",false);
         cin >> q;
-        if (q=='1')
-            calc();
+        if (q=='1'){
+            int a,b;
+            char o;
+            print("calc> ","white",false);
+            cin >>a>>o>>b;
+            while (a!='0'&&b!='0'&&o!='c'){
+                cout << calc(a,b,o) <<endl;
+                print("calc> ","white",false);
+                cin >>a>>o>>b;
+            }
+        }
         if (q=='2')
             B();
         if (q=='3')
             C();
         if (q=='4')
             D();
-//if (u=='5')E();
 	    if (q=='E'||q=='e')
 		    break;
         if (q=='A'||q =='a'){

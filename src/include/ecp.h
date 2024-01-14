@@ -4,14 +4,18 @@
 #include <cstring>
 #include <cstdio>
 #include <string>
+#include <cstddef>
 using namespace std;
 
 int error(){
-    cout << "\033[1,31mERROR!\033[0m\a\n";
+    printf("\033[1,31mERROR!\033[0m\a\n");
     return 1;
 }
 
-void clear(){system("clear");}
+int clear(){
+    system("clear");
+    return 0;
+}
 
 void print(const char T[],string color,bool i){
     if(i==true){
@@ -29,7 +33,8 @@ void print(const char T[],string color,bool i){
             cout<<"\033[35m"<<T<<"\033[0m\n";
         if(color=="white")
             cout<<"\033[0m"<<T<<"\033[0m\n";
-        error;
+        else
+            error();
     }
     if(i==false){
         if(color=="none")
@@ -48,9 +53,11 @@ void print(const char T[],string color,bool i){
             cout<<"\033[35m"<<T<<"\033[0m";
         if(color=="white")
             cout<<"\033[0m"<<T<<"\033[0m";
-        error;
+        else
+            error();
     }
-    error;
+    else
+        error();
 }
 
 void line(const char S[],int l,string color,bool i){
@@ -61,7 +68,7 @@ void line(const char S[],int l,string color,bool i){
         }
         print(S,color,i);
     }
-    error;
+    error();
 }
 
 void dash(const char T[]){
@@ -81,7 +88,8 @@ void boxout(const char T[],string bc,string tc,bool i){
         line("-",l+2,bc,false);
         print("+",bc,i);
     }
-    error;
+    else
+        error();
 }
 void hy(const char T[]){cout<<"==> "<<T<<endl;}
 char q;
