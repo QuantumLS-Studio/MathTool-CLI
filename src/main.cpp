@@ -1,6 +1,6 @@
 ﻿//Preview, be careful
 
-#include "./include/ecp.h"
+#include "./include/include.h"
 
 // Include modules
 #include "./module/calc.cpp"
@@ -46,7 +46,7 @@ int main(){
         if (q=='A'||q =='a'){
             clear();
             line("=",20,"blue",true);
-            dash("MCT Preview v0.0.1.3-4");
+            dash("MCT Preview v0.0.1.3-5");
             dash("Made by QuantumLS-Studio");
             dash("Url: https://github.com/QuantumLS-Studio/MathCentralTool");
             line("=",20,"blue",true);

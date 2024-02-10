@@ -40,17 +40,16 @@ Or clone and compile by yourself.
 
 [FTS427](https://github.com/FTS427) responsible for the entire project
 
-[JWJUN233233](https://github.com/JWJUN233233) provides help with "Git Action" for this project
+[JWJUN233233](https://github.com/JWJUN233233) gave help with "Git Action" for this project
 
-[N55743](https://github.com/N55743) provided Windows testing and translation services for the entire project, and asked some questions and suggestions
+[N55743](https://github.com/N55743) provided Windows testing and translation services for the entire project, and asked some useful questions and suggestions
 
 Thank every developer very much for their help!👍
 
 ## 👀 Other
 
-Change log [change](/change_log.md)
+Change log -> [here](/change_log.md)
 
-This project also powered by [ECCPH](https://github.com/QuantumLS-Studio/ECCPH)
+This project also is powered by [ECCPH](https://github.com/QuantumLS-Studio/ECCPH)
 
-Old versions[MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）
-
+Old versions [MathCentralTools](https://github.com/FTS427/MathCentralTools)（Archived🗃️）

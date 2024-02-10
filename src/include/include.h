@@ -17,42 +17,42 @@ int clear(){
     return 0;
 }
 
-void print(const char T[],string color,bool i){
+void print(const char TEXT[],string color,bool i){
     if(i==true){
         if(color=="none")
-            cout<<T<<"\n";
+            cout<<TEXT<<"\n";
         if(color=="red")
-            cout<<"\033[31m"<<T<<"\033[0m\n";
+            cout<<"\033[31m"<<TEXT<<"\033[0m\n";
         if(color=="yellow")
-            cout<<"\033[32m"<<T<<"\033[0m\n";
+            cout<<"\033[32m"<<TEXT<<"\033[0m\n";
         if(color=="teal")
-            cout<<"\033[36m"<<T<<"\033[0m\n";
+            cout<<"\033[36m"<<TEXT<<"\033[0m\n";
         if(color=="blue")
-            cout<<"\033[34m"<<T<<"\033[0m\n";
+            cout<<"\033[34m"<<TEXT<<"\033[0m\n";
         if(color=="purple")
-            cout<<"\033[35m"<<T<<"\033[0m\n";
+            cout<<"\033[35m"<<TEXT<<"\033[0m\n";
         if(color=="white")
-            cout<<"\033[0m"<<T<<"\033[0m\n";
+            cout<<"\033[0m"<<TEXT<<"\033[0m\n";
         else
             error();
     }
     if(i==false){
         if(color=="none")
-            cout<<T;
+            cout<<TEXT;
         if(color=="red")
-            cout<<"\033[31m"<<T<<"\033[0m";
+            cout<<"\033[31m"<<TEXT<<"\033[0m";
         if(color=="yellow")
-            cout<<"\033[33m"<<T<<"\033[0m";
+            cout<<"\033[33m"<<TEXT<<"\033[0m";
         if(color=="green")
-            cout<<"\033[32m"<<T<<"\033[0m";
+            cout<<"\033[32m"<<TEXT<<"\033[0m";
         if(color=="teal")
-            cout<<"\033[36m"<<T<<"\033[0m";
+            cout<<"\033[36m"<<TEXT<<"\033[0m";
         if(color=="blue")
-            cout<<"\033[34m"<<T<<"\033[0m";
+            cout<<"\033[34m"<<TEXT<<"\033[0m";
         if(color=="purple")
-            cout<<"\033[35m"<<T<<"\033[0m";
+            cout<<"\033[35m"<<TEXT<<"\033[0m";
         if(color=="white")
-            cout<<"\033[0m"<<T<<"\033[0m";
+            cout<<"\033[0m"<<TEXT<<"\033[0m";
         else
             error();
     }
