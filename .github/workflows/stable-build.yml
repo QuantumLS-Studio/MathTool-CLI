@@ -1,4 +1,4 @@
-name: MCT-StableBuild
+name: Stable-Build
 
 on:
   push:
@@ -7,29 +7,15 @@ on:
     branches: [ "Stable" ]
 
 jobs:
-
   linux:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: build-linux
-      run: make
-      working-directory: src
-    - name: Build MCT-Linux
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Cmake
+      uses: threeal/cmake-action@v1.3.0
+    - name: Upload exec file
       uses: actions/upload-artifact@v3.1.2
       with:
-        name: MCT-Linux
-        path: src/MCT-Linux
- 
-  windows:
-    runs-on: windows-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: build-windows
-      run: g++ MCT-Windows.cpp -o MCT-Windows.exe
-      working-directory: src
-    - name: Build MCT-Windows
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        name: MCT-Windows
-        path: src/MCT-Windows
+        name: MCT
+        path: build/MCT
