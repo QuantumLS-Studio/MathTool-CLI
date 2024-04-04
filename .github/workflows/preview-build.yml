@@ -1,21 +1,10 @@
 name: Preview-Build
 
-on:
-  push:
-    branches: [ "Preview" ]
-  pull_request:
-    branches: [ "Preview" ]
-
 jobs:
   linux:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Cmake
-      uses: threeal/cmake-action@v1.3.0
-    - name: Upload exec file
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        name: MCT-Pre
-        path: build/MCT
+    - name: Build
+    - name: Release
